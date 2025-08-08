@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student ID Card</title>
+    <link href="logo.png" rel="icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+   <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    .main{
+        padding: 20px;
+        text-align: center;
+    }
+    .main > p{
+        color: #1976D2;
+    }
+    .main  > input{
+        padding: 10px;
+        width: 50%;
+        border: 1px solid green;
+        border-radius: 5px;
+    }
+    .main-btn{
+        display: flex;
+        justify-content: center;
+    }
+    .main-btn > .btn{
+        width: 49%;
+        height: 5vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: larger;
+        font-weight: 500;
+    }
+    @media screen and (max-width:700px){
+        .main  > input{
+            width: 100%;
+        }
+        .main-btn > .btn{
+            width: 90%;
+        }
+    }
+</style>
+<body>
+    <!-- navbar Work Start -->
+<nav class="navbar">
+<div class="nav-div">
+    <div>
+        <img src="./saylani-img.jfif" alt="Pic can't open due to internet issue">
+    </div>
+    <div class="logo-div">
+        <div>
+            <a href="https://web.facebook.com/SaylaniWelfareInternationalTrust/?_rdc=1&_rdr#" target="_blank"><i class="fa-brands fa-facebook" style="color: #2db8e6;"></i></a>
+            <a href="https://www.instagram.com/officialswit/?hl=en" target="_blank"><i class="fa-brands fa-instagram" style="color: #9c3da9;"></i></a>
+            <a href="https://www.youtube.com/c/saylaniwelfareinternationaltrust" target="_blank"><i class="fa-brands fa-youtube" style="color: #de1b1b;"></i></a>
+        </div>
+        <div><h1>Registration Form-SMIT</h1></div>
+        <div><button id="student-portal" class="btn btn-outline-primary">Student Portal</button></div>
+    </div>
+    <div>
+        <p>Service - Education - Registration</p>
+    </div>
+    <br>
+    <div>
+        <button id="registration" class="btn btn-outline-success">Registration</button>
+        <button id="id-card" class="btn btn-outline-success">Download ID Card</button>
+        <button id="check-result" class="btn btn-outline-success">Result</button>
+    </div>
+</div>
+</nav>
+
+
+<div class="main">
+    <p>CNIC (Which you provided during form submission)</p>
+    <input class="col-12 col-md-6" type="number" placeholder="Enter your CNIC number" name="" id="cnic">
+</div>
+<div class="main-btn">
+<button class="col-12 col-md-6 btn btn-primary">Submit</button>
+</div>
+ <script>
+    document.querySelector('#registration').addEventListener('click',()=>{
+    window.open('index.html','_self')
+})
+document.querySelector('#id-card').addEventListener('click',()=>{
+    window.open('IdCard.html','_self')
+})
+document.querySelector('#check-result').addEventListener('click',()=>{
+    window.open('Result.html','_self')
+})
+ </script> 
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>  
+</body>
+</html>

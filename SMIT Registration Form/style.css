@@ -1,0 +1,56 @@
+/* navbar work start */
+
+.nav-div{
+margin: auto;
+width: 100%;
+text-align: center;
+}
+
+.logo-div{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.logo-div > div > a > i{
+    font-size:x-large;
+}
+@media screen and (max-width:600px){
+  .logo-div > div > a > i{
+    font-size:large;
+}  
+
+}
+
+/* main container body start */
+.container{
+height: 100vh;
+}
+.first{
+    display: flex;
+    justify-content:center;
+}
+label{
+    color: #1976D2;
+    font-weight: 500;
+    font-size:medium;
+    padding: 10px;
+}
+.form-control{
+    border: 1px solid green;
+    padding: 10px;
+    border-radius: 5px;
+}
+.form-select{
+     border: 1px solid green;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.select{
+    border: 1px solid green;
+    padding: 3px;
+    border-radius: 5px;
+}
+.button{
+    width: 100%;
+}

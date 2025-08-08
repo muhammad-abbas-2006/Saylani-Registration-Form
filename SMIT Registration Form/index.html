@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMIT Registration Form</title>
+    <link href="logo.png" rel="icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+   <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+    <!-- navbar Work Start -->
+<nav class="navbar">
+<div class="nav-div">
+    <div>
+        <img src="./saylani-img.jfif" alt="Pic can't open due to internet issue">
+    </div>
+    <div class="logo-div">
+        <div>
+            <a href="https://web.facebook.com/SaylaniWelfareInternationalTrust/?_rdc=1&_rdr#" target="_blank"><i class="fa-brands fa-facebook" style="color: #2db8e6;"></i></a>
+            <a href="https://www.instagram.com/officialswit/?hl=en" target="_blank"><i class="fa-brands fa-instagram" style="color: #9c3da9;"></i></a>
+            <a href="https://www.youtube.com/c/saylaniwelfareinternationaltrust" target="_blank"><i class="fa-brands fa-youtube" style="color: #de1b1b;"></i></a>
+        </div>
+        <div><h1>Registration Form-SMIT</h1></div>
+        <div><button id="student-portal" class="btn btn-outline-primary">Student Portal</button></div>
+    </div>
+    <div>
+        <p>Service - Education - Registration</p>
+    </div>
+    <br>
+    <div>
+        <button id="registration" class="btn btn-outline-success">Registration</button>
+        <button id="id-card" class="btn btn-outline-success">Download ID Card</button>
+        <button id="check-result" class="btn btn-outline-success">Result</button>
+    </div>
+</div>
+</nav>
+    <!-- navbar Work End -->
+
+    <!-- Input Field Work Start -->
+
+<div class="container">
+<div class="row">
+    <div class="col-12 col-md-6">
+        <label for="">Select Country</label>
+        <select id="S-country" class="form-select">
+            <option selected>Select Country</option>
+            <option value="1">Pakistan</option>
+            <option value="2">Turkey</option>
+            <option value="3">Saudi Arabia</option>
+        </select>
+    </div>
+    <div class="col-12 col-md-6">
+        <label for="">Select City</label>
+        <select id="S-city" class="form-select">
+            <option selected>Select City</option>
+            <option value="1">Karachi</option>
+            <option value="2">Istanbul (Turkey)</option>
+            <option value="3">Islamabad</option>
+            <option value="4">Jeddah (Saudi Arabia)</option>
+        </select>
+    </div>
+</div>
+
+<div class="row mt-3">
+    <div class="col-12 col-md-6">
+        <label for="">Select Course OR Event</label>
+        <select id="S-course" class="form-select">
+            <option selected>Select Course OR Event</option>
+            <option value="1">Modern Web And Mobile App Development</option>
+            <option value="2">Artificial Intelligence</option>
+            <option value="3">Graphic Design</option>
+        </select>
+    </div>
+    <div class="col-12 col-md-6">
+        <label for="">Select Your Computer Proficiency</label>
+        <select id="S-pro" class="form-select">
+            <option selected>Computer Proficiency</option>
+            <option value="1">Beginner</option>
+            <option value="2">Intermediate</option>
+            <option value="3">Senior</option>
+        </select>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12 col-md-6">
+        <label for="">Full Name</label>
+        <input placeholder="Enter Your Name" id="name" class="form-control" type="text">
+    </div>
+    <div class="col-12 col-md-6">
+        <label for="">Email</label>
+        <input placeholder="Enter Your Email" id="email" class="form-control" type="email">
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12 col-md-6">
+        <label for="">CNIC</label>
+        <input placeholder="Enter CNIC Number" id="student-cnic" class="form-control" type="number">
+    </div>
+    <div class="col-12 col-md-6">
+        <label for="">Father's CNIC (optional)</label>
+        <input placeholder="Enter CNIC Number" id="father-cnic" class="form-control" type="number">
+    </div>
+</div>
+
+ <div class="row">
+    <div class="col-12 col-md-6">
+        <label for="">Date Of Birth</label>
+        <input id="dob" class="form-control" type="date">
+    </div>
+    <div class="col-12 col-md-6">
+        <label for="">Select Gender</label>
+       
+       <select id="S-gender" class="form-select" aria-label="Default select example">
+       <option selected>Select Gender</option>
+       <option value="1">Male</option>
+       <option value="2">Female</option>
+       </select>
+    
+</div>
+
+</div>
+
+<!-- last line -->
+<div class="row">
+<label for="">Address :</label>
+<input placeholder="Enter Your Current Address" id="address" class="form-control" type="text">
+
+<label for="">Last qualification :</label>
+      <div class="col-md-12">
+      <select id="S-qualification" class="form-select" aria-label="Default select example">
+       <option selected>Last qualification</option>
+       <option value="1">Matric</option>
+       <option value="2">Intermediate</option>
+       <option value="3">University</option>
+       <option value="4">Master (computer)</option>
+
+       </select>
+       </div>
+
+<label for="">Do you have a Laptop?.</label>
+<div class="col-md-12">
+      <select id="S-laptop" class="col-md-12 form-select" aria-label="Default select example">
+       <option selected>Do you have a Laptop?</option>
+       <option value="1">Yes</option>
+       <option value="2">No</option>
+
+       </select>
+       </div>
+</div>
+
+<div>
+    <label for="">Picture</label><br>
+    <input id="image" class="form-control" type="file"><br>
+    <label for="">Image requirement :</label><br>
+<p>
+1) With white or blue background <br>
+2) File size must be less than 1MB <br>
+3) File type: jpg, jpeg, png <br>
+</p>
+
+<label for="">Important Note:</label><br>
+
+<p>
+1) I hereby, solemnly declare that the data and facts mentioned herein are true and correct to the best of my knowledge. Further, I will abide by all the established and future regulations and policies of SWIT<hr>
+2) I hereby accept the responsibilities of good conduct and guarantee that I will not be involved in any other activity, political or ethical, but learning during my stay in the program.<hr>
+3) Defiance will render my admission canceled at any point in time.<hr>
+4) Upon completion, of the course, I will complete the required project by SWIT.<hr>
+5) It's mandatory for female students to wear abaya/hijab in the class<hr>
+</p>
+
+<button id="Submit-btn" class="button btn btn-primary">Submit</button><hr>
+<br><br><br><br>
+</div>
+</div>
+    
+   <script src="app.js" type="module"></script> 
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>  
+</body>
+</html>
